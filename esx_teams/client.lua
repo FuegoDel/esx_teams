@@ -246,7 +246,6 @@ function getClosePlayers()
 					local playerMugshotId = RegisterPedheadshot(GetPlayerPed(v))
 
 					while not IsPedheadshotReady(playerMugshotId) do
-						print('Loading')
 						Wait(0)
 					end
 			
