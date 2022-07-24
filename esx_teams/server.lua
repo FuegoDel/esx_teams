@@ -23,19 +23,6 @@ MySQL.ready(function()
     end)  
 end)
 
-MySQL.ready(function()
-
-    MySQL.Async.fetchAll("SELECT * FROM teamsprivilages",{}, 
-    
-    function(result)
-
-        for k,v in pairs(result)do
-            teamPrivilages[v.jobname] = json.decode(v.privilages)
-        end
-
-    end)
-end)
-
 AddEventHandler("esx:playerLoaded",function(src,xPlayer) --As im typing in the clientside its just an example i dont really recomned to use the privilages i made
     Wait(5000)
  
