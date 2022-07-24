@@ -7,6 +7,7 @@ A Script designed to help servers achieve achieve creating their own criminal/te
 * Team Menu
 * Privilages System
 * Responsive NUI for all those stuff
+* Experience and leveling system
 * Amazing Handling :)
 
 # Server Exports 
