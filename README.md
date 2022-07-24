@@ -9,7 +9,7 @@ A Script designed to help servers achieve achieve creating their own criminal/te
 * Responsive NUI for all those stuff
 * Amazing Handling :)
 
-#Server Exports 
+# Server Exports 
 
 * isInTeam(jobName)
 * isTeamBoss(identifier)
@@ -28,13 +28,13 @@ A Script designed to help servers achieve achieve creating their own criminal/te
 * createTeam(jobname,playerid)
 * setTeamOwner(team,playerid)
 
-#Client Exports
+# Client Exports
 
 * getClientTeamExperience(job)
 * getClientTeamLevel(job)
 * isClientInTeam(job)
 
-#Availabe Commands
+# Availabe Commands
 * /setteamlevel [team] [level]
 * /upgradeteamlevel [team]
 * /downgradeteamlevel [team]
@@ -46,7 +46,7 @@ A Script designed to help servers achieve achieve creating their own criminal/te
 * /addteamxp [teamname] [exp]
 * /removeteamxp [teamname] [exp]
 
-#Dependencies 
+# Dependencies 
 * es_extended
 * mysql-async
 * Note that script is build and tested on ESX 1.1 i beleive
