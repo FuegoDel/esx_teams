@@ -1,0 +1,448 @@
+@font-face {
+  font-family: "RistrettoPro-Regular";
+  src: url('fonts/font.woff2') format('woff2'), url('fonts/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'URW DIN Arabic Cond';
+  src: url('fonts/URWDINArabicCond-Black.woff2') format('woff2'),
+    url('fonts/URWDINArabicCond-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Neusa';
+  src: url('fonts/Neusa-SemiBold.woff2') format('woff2'),
+    url('fonts/Neusa-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Bebas Nue";
+  src: url("fonts/BebasNeuePro-Regular.ttf") format("truetype");
+}
+
+
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Bebas Nue";
+}
+
+body {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  display: none;
+  background: linear-gradient(90.9deg, rgba(26, 25, 25, 0.9) 0%, rgba(27, 170, 161, 0) 36.02%, rgba(26, 25, 25, 0.9) 84.1%, rgba(26, 25, 25, 0.9) 100%, rgba(128, 128, 128, 1) 100%)rgba(26, 25, 25, 0.7);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-page {
+  height: 100vh;
+}
+
+.register-container {
+  height: 67vh;
+  margin-top: 15vh;
+  width: 40vw;
+  border-radius: 25px;
+}
+
+.register-header {
+  margin-top: 3vh;
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+
+}
+
+#glowing-text {
+  color: rgb(11, 147, 238);
+  text-shadow: 0px 0px 6px rgb(11, 147, 238);
+}
+
+.register-info-label {
+  margin-top: 6vh;
+  color: white;
+  font-size: 1.1vw;
+  margin-left: 7vw;
+}
+
+.register-info {
+  margin-top: 5vh;
+}
+
+.register-circle {
+  display: inline-block;
+  background: rgba(26, 25, 25, 0.4);
+  width: 3.6vw;
+  height: 7vh;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-size: 1.8vw;
+}
+
+#border-up {
+  border: 1px solid;
+  color: white;
+  width: 20vw;
+  position: relative;
+  top: -1.2vh;
+  left: 19vw;
+}
+
+#border-down {
+  border: 1px solid;
+  color: white;
+  position: relative;
+  top: 7.6vh;
+  width: 6vw;
+  margin-left: 0.5vw;
+}
+
+#circle-icon {
+  margin-top: 1.7vh;
+  color: rgb(11, 147, 238);
+  text-shadow: 0px 0px 15px rgb(11, 147, 238);
+}
+
+.circle-text {
+  font-style: normal;
+  margin-left: -3.2vw;
+  margin-right: -2vw;
+  width: 10vw;
+  margin-top: 2vh;
+  font-size: 1.5vw;
+  color: rgb(11, 147, 238);
+  text-shadow: 0px 0px 15px rgb(11, 147, 238);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input[type=text] {
+  border: none;
+}
+
+input {
+  margin-top: 2vh;
+  color: white;
+  background-color: rgba(26, 26, 26, 0.671);
+  border: none;
+  height: 3.5vh;
+  width: 12vw;
+  color: white;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.register-input {
+  margin-top: 3vh;
+}
+
+.input-field-label {
+  color: white;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.border-down-text {
+  color: white;
+  margin-top: 6vh;
+  margin-left: 27vw;
+  font-size: 1.1vw;
+}
+
+#btn-create {
+  color: white;
+  border-radius: 30px;
+  border: none;
+  width: 10vw;
+  height: 5vh;
+  margin-top: 3vh;
+  font-size: 1.5vw;
+  transition: ease-in-out 0.5s;
+  background: linear-gradient(120.9deg, rgba(78, 174, 238, 0.9) 0%, rgba(27, 170, 161, 0) 36.02%, rgba(60, 164, 233, 0.9) 84.1%, rgba(11, 147, 238, 0.9) 100%, rgba(128, 128, 128, 1) 100%)rgba(11, 147, 238, 0.7);
+}
+
+#btn-create:hover {
+  cursor: pointer;
+  background: linear-gradient(120.9deg, rgba(54, 122, 167, 0.9) 0%, rgba(27, 170, 161, 0) 36.02%, rgba(50, 137, 196, 0.9) 84.1%, rgba(9, 123, 199, 0.9) 100%, rgba(128, 128, 128, 1) 100%)rgba(8, 126, 204, 0.7);
+
+}
+
+.container-team {
+  margin-top: 10vh;
+  height: 70vh;
+  width: 70vw;
+  color: white;
+  font-size: 2vw;
+}
+
+.container-team-header {
+  height: 5vh;
+  text-align: center;
+  font-size: 3vw;
+  transform: skew(-1deg);
+}
+
+
+#glowing-text {
+  color: rgb(11, 147, 238);
+  text-shadow: 0px 0px 6px rgb(11, 147, 238);
+}
+
+.border-steady {
+  border: 1px solid;
+  position: relative;
+  width: 15vw;
+  left: 3vw;
+  top: 3.3vh;
+}
+
+#border-steady-icon {
+  position: relative;
+  top: 5.3vh;
+}
+
+.team-options-container {
+  margin-top: 5vh;
+  height: 60vh;
+  overflow-x: hidden;
+}
+
+.option-item {
+  height: 23vh;
+  display: inline-block;
+  width: 15vw;
+  margin-top: 5vh;
+  margin-left: 6vw;
+  margin-right: 0.5vw;
+  text-align: center;
+  border-radius: 50%;
+  transition: ease-in-out 1s;
+  font-size: 3vw;
+}
+
+.option-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.option-icon {
+  color: rgb(11, 147, 238);
+  text-shadow: 0px 0px 6px rgb(11, 147, 238);
+  margin-top: 5vh;
+}
+
+.option-title {
+  font-size: 1.5vw;
+  margin-top: 2vh;
+}
+
+.container-info {
+  height: 20vh;
+  position: relative;
+  top: -10.5vh;
+  left: 69vw;
+  width: 15vw;
+}
+
+.table-info {
+  font-size: 1.5vw;
+  border-spacing: 1vw 5vh;
+}
+
+.privilages-header {
+  height: 10vh;
+  color: white;
+  transform: skew(-4deg);
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+#glowing-text {
+  color: rgb(11, 147, 238);
+  text-shadow: 0px 0px 6px rgb(11, 147, 238);
+}
+
+.privilages-border {
+  color: white;
+  border: 1px solid;
+  width: 35vw;
+}
+
+#privilage-icon {
+  font-size: 2vw;
+  color: white;
+  transform: rotateZ(270deg);
+}
+
+#privilages-container {
+  width: 45vw;
+  margin-top: 5vh;
+  height: 50vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.privilage-item {
+  background: linear-gradient(to top, rgba(50, 50, 50, 0.3), rgba(50, 50, 50, 0.25), rgba(50, 50, 50, 0.20), rgba(50, 50, 50, 0.15), rgba(50, 50, 50, 0.10), rgba(50, 50, 50, 0.05), rgba(50, 50, 50, 0));
+  width: 10vw;
+  height: 20vh;
+  display: inline-block;
+  margin-left: 3.7vw;
+  margin-top: 4vh;
+}
+
+#unowned-privilage:hover {
+  cursor: pointer;
+  transition: ease-in-out 0.7s;
+  background: linear-gradient(to top, rgba(11, 147, 238, 0.3), rgba(11, 147, 238, 0.25), rgba(11, 147, 238, 0.20), rgba(11, 147, 238, 0.15), rgba(11, 147, 238, 0.10), rgba(11, 147, 238, 0.05), rgba(11, 147, 238, 0));
+
+  /*onclick = "onBuyingPrivilage('${teamPrivilages[i].privilageName}')"*/
+}
+
+#owner-privilage {
+  background: linear-gradient(to top, rgba(11, 147, 238, 0.3), rgba(11, 147, 238, 0.25), rgba(11, 147, 238, 0.20), rgba(11, 147, 238, 0.15), rgba(11, 147, 238, 0.10), rgba(11, 147, 238, 0.05), rgba(11, 147, 238, 0));
+
+}
+
+.privilage-title {
+  color: white;
+  font-size: 1.4vw;
+  text-align: center;
+  margin-top: 4vh;
+
+}
+
+.privilage-cost {
+  text-align: center;
+}
+
+.privilage-item-icon {
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.hire-header {
+  color: white;
+  transform: skew(-4deg);
+  text-align: center;
+  font-size: 4vw;
+  margin-top: 5vh;
+}
+
+.border-hire {
+  color: white;
+  border: 1px solid;
+  width: 40vw;
+}
+
+#hire-icon {
+  color: white;
+  font-size: 2vw;
+  position: relative;
+}
+
+#glowing-text {
+  color: rgb(11, 147, 238);
+  text-shadow: 0px 0px 6px rgb(11, 147, 238);
+}
+
+#container-hire {
+  width: 50vw;
+  height: 50vh;
+  margin-top: 4vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.hire-item {
+  display: inline-block;
+  color: white;
+  margin-left: 2vw;
+  margin-top: 4vh;
+  width: 10vw;
+  height: 22vh;
+  background-color: rgba(40, 40, 43, 0.5);
+}
+
+.hire-title {
+  color: white;
+  margin-top: 2vh;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.hire-icon {
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  margin-top: 2vh;
+}
+
+.hire-btn {
+  margin-top: 3vh;
+  display: inline-block;
+  width: 5vw;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.hire-btn:hover {
+  cursor: pointer;
+  color: rgb(11, 147, 238);
+}
+
+#hire-font-icon {
+  color: rgb(11, 147, 238);
+  text-shadow: 0px 0px 7px rgb(11, 147, 238);
+  font-size: 2vw;
+  margin-top: 2.5vh;
+}
+
+#hovering-hire-text:hover {
+  color: rgb(11, 147, 238);
+  text-shadow: 0px 0px 7px rgb(11, 147, 238);
+  cursor: pointer;
+}
+
+.hire-btn-manage {
+  margin-top: 3vh;
+  font-size: 1vw;
+}
+
+::-webkit-scrollbar {
+  width: 0.3vw;
+  border-radius: 50px;
+  background-color: rgba(25, 25, 25, 0.448);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(11, 147, 238);
+  border-radius: 25px;
+}
