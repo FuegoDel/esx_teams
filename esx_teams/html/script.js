@@ -79,7 +79,7 @@ function buildManageMenu() {
       document.getElementById('container-hire').innerHTML += `
       <div class="hire-item">
       <div class="hire-title" id="glowing-text">
-        Fuego Del
+        ${teamMembers[i].steamName}
       </div>
       <div class="center">
         <i id="hire-font-icon" class="${gradeIcons[teamMembers[i].grade]}"></i>
@@ -95,7 +95,7 @@ function buildManageMenu() {
       document.getElementById('container-hire').innerHTML += `
       <div class="hire-item">
       <div class="hire-title" id="glowing-text">
-        Fuego Del
+        ${teamMembers[i].steamName}
       </div>
       <div class="center">
           <i id="hire-font-icon" class="${gradeIcons[teamMembers[i].grade]}"></i>
@@ -111,7 +111,7 @@ function buildManageMenu() {
       document.getElementById('container-hire').innerHTML += `
       <div class="hire-item">
       <div class="hire-title" id="glowing-text">
-        Fuego Del
+        ${teamMembers[i].steamName}
       </div>
       <div class="center">
           <i id="hire-font-icon" class="${gradeIcons[teamMembers[i].grade]}"></i>
